@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Ordering Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+    .chat-container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>🍔 Food Ordering Bot Demo</h2>
+    <p>Click the chat bubble in the bottom-right corner to place your order!</p>
+  </div>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/prod/v1/dialogflow-messenger.js"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Food Ordering Bot"
+    agent-id="8b95fc4d-3feb-4991-bcf3-f440e84fd209"
+    language-code="en"
+  ></df-messenger>
+</body>
+</html>
